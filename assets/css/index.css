@@ -1,0 +1,92 @@
+
+/* Styles déjà existants pour le plan */
+.plan {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+    border-top: 5px solid #000;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: scale(0.9); /* Commence légèrement plus petit */
+    opacity: 0; /* Commence invisible */
+    /* Ajout pour l'effet hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan:hover {
+    transform: scale(1.05); /* Agrandit le plan */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Accentue l'ombre pour l'effet de profondeur */
+    z-index: 10; /* Pour que le plan passe au-dessus des autres */
+}
+/* Quand le plan est visible */
+.plan.visible {
+    transform: scale(1); /* Taille normale */
+    opacity: 1; /* Devient visible */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+    .plan.popular {
+        border-top-color: red; /* Remplace le vert par rouge */
+    }
+    .plan-header {
+        background-color: #111; /* Noir foncé */
+        color: white;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+    .plan-popular-header {
+        background-color: red; /* Rouge pour la colonne populaire */
+    }
+    .plan-price {
+        font-size: 32px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+    .plan-features {
+        list-style: none;
+        padding: 0 20px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .plan-features li {
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .choose-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: 2px solid #000;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .choose-btn:hover {
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+    }
+    .plan.popular .choose-btn {
+        border-color: red;
+        color: red;
+    }
+    .plan.popular .choose-btn:hover {
+        background-color: red;
+        color: white;
+        border-color: red;
+    }
+
+    .logo img {
+    max-height: 60px;  /* Hauteur max */
+    width: auto;       /* Garde les proportions */
+    display: block;
+}
+h2{
+    color: white;
+}
+
+
+.h2-black {
+    color: #000;
+}
